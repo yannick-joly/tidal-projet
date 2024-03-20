@@ -2,7 +2,7 @@
 set -e
 
 # Commandes SQL de création d'utilisateur applicatif
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB_NAME" <<-EOSQL
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
     -- Créer l'utilisateur dédiée à l'application PHP
     CREATE USER $POSTGRES_PHP_USER WITH PASSWORD '$POSTGRES_PHP_PASSWORD';
 
