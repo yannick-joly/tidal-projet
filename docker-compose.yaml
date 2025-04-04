@@ -7,7 +7,7 @@ services:
     restart: on-failure
     ports:
       - 50180:80
-    environment: 
+    environment:
       DB_HOST: postgres
       DB_USER: ${POSTGRES_PHP_USER}
       DB_PASSWORD: ${POSTGRES_PHP_PASSWORD}
@@ -35,7 +35,7 @@ services:
     ports:
       - 50181:80
     environment:
-      PGADMIN_DEFAULT_EMAIL: test@test.test
+      PGADMIN_DEFAULT_EMAIL: test@cpe.fr
       PGADMIN_DEFAULT_PASSWORD: testtest
       PGADMIN_CONFIG_SERVER_MODE: 'False'
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
